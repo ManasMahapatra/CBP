@@ -1,0 +1,3 @@
+Instead of creating an actual plugin, we can shift it to context menu item, basically where user will right click
+ and get an option to analyze the elemnt directly.
+Thus reducing the need to enable and disable frequently.
