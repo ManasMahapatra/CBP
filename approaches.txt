@@ -2,3 +2,4 @@ Instead of creating an actual plugin, we can shift it to context menu item, basi
  and get an option to analyze the elemnt directly.
 Thus reducing the need to enable and disable frequently.
 https://developer.chrome.com/extensions/user_interface#context_menu
+https://developer.chrome.com/extensions/contextMenus
