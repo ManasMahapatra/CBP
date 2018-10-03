@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Kodchasan:600,700" rel="stylesheet">
-
   </head>
   <body>
     <div class="title--main">
+      <!-- Beginning of title class -->
       <h1>THE ALUMNI TERMINAL</h1>
+      <!-- Description goes here -->
       <p>
         This portal is a one stop monitoring, tracking and interaction platform for all institutions, of all tier with their respective alumni. It tries to provide a solid functionality set which can benefit the alma-mater from their alumni in a straight aimple and secure way.
       </p>
+      <!-- Buttons go here -->
       <div class="buttons--main">
-        <a class="btn btn-full" href="#" onclick="document.getElementById('modal--1').style.display='block'">LOG IN</a>
-        <a class="btn btn-ghost" href="#" onclick="document.getElementById('modal--2').style.display='block'">SIGN UP</a>
+        <a class="btn btn-full" href="#">LOG IN</a>
+        <a class="btn btn-ghost" href="#">SIGN UP</a>
       </div>
-
-      <div id="modal--1">
-        <span onclick="document.getElementById('modal--1').style.display='none'">&times</span>
-        <form>
-          <label>
-            <input type="text" required />
-            <div class="label-text">USERNAME</div>
-          </label>
-          <label>
-            <input type="text" required />
-            <div class="label-text">Password</div>
-          </label>
-          <button>Log In</button>
-        </form>
-      </div>
-      <div id="modal--2">
-        <span onclick="document.getElementById('modal--2').style.display='none'">&times</span>
-        <form>
-          <label>
-            <input type="text" required />
-            <div class="label-text">USERNAME</div>
-          </label>
-          <label>
-            <input type="text" required />
-            <div class="label-text">Password</div>
-          </label>
-          <label>
-            <input type="text" required />
-            <div class="label-text">Confirm Password</div>
-          </label>
-          <button>Sign Up</button>
-        </form>
-      </div>
-
+      <!-- End of title class -->
     </div>
-    <div class="desc--main">
-
+    <div id="modal--1">
+      <span onclick="document.getElementById('modal--1').style.display='none'">&times</span>
+      <form>
+        <label>
+          <input type="text" required />
+          <div class="label-text">USERNAME</div>
+        </label>
+        <label>
+          <input type="text" required />
+          <div class="label-text">Password</div>
+        </label>
+        <button>Log In</button>
+      </form>
     </div>
-
+    <div id="modal--2">
+      <span onclick="document.getElementById('modal--2').style.display='none'">&times</span>
+      <form>
+        <label>
+          <input type="text" required />
+          <div class="label-text">USERNAME</div>
+        </label>
+        <label>
+          <input type="text" required />
+          <div class="label-text">Password</div>
+        </label>
+        <label>
+          <input type="text" required />
+          <div class="label-text">Confirm Password</div>
+        </label>
+        <button>Sign Up</button>
+      </form>
+    </div>
+    <!-- Particle JS -->
     <div id="particles-js"></div>
+    <!-- End of importing particle JS -->
     <script rel="text/javascript" src="particles.js"></script>
     <script rel="text/javascript" src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
