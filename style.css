@@ -85,6 +85,11 @@ canvas {
   z-index: 4;
   top: 25%;
   left: 40%;
+  border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 5px;
 }
 #modal--1 {
   position: absolute;
@@ -94,6 +99,12 @@ canvas {
   z-index: 4;
   top: 33%;
   left: 40%;
+      border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 5px;
+
 }
 form {
   text-align: center;
@@ -169,4 +180,66 @@ button:hover, button:focus {
   background-color: white;
   color: rgba(38, 38, 38, 0.77);
   outline: 0;
+}
+.follow, .share {
+  display: inline-block;
+  cursor: default;
+  padding: 0;
+  margin: 0 .5em;
+  position: relative;
+  text-align: center;
+}
+.follow:hover .label, .share:hover .label {
+  opacity: 0;
+  transition: opacity .5s .125s ease-out;
+}
+.follow:hover .icon, .share:hover .icon {
+  border-radius: 1em;
+  margin: 0 0;
+}
+
+.icon, .label {
+  background-color: #FC4F05;
+  line-height: 2rem;
+}
+
+.label {
+  border-radius: 1rem;
+  position: absolute;
+  font-size: .618em;
+  font-weight: 900;
+  letter-spacing: .0816em;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: opacity .5s .75s ease-out;
+}
+
+.icon {
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 2em;
+  margin: 0 -.5em;
+  transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+  width: 2em;
+}
+.icon.first {
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+  margin-left: 0;
+  
+}
+.icon.last {
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  margin-right: 0;
+   
+}
+.icon:hover {
+  background-color: #ebc247;
+  color: #111;
 }
