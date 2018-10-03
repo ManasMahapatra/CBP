@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Kodchasan:600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <div class="title--main">
@@ -16,38 +17,47 @@
       </p>
       <!-- Buttons go here -->
       <div class="buttons--main">
-        <a class="btn btn-full" href="#">LOG IN</a>
-        <a class="btn btn-ghost" href="#">SIGN UP</a>
+        <div class="follow">
+          <a class="icon first btn btn-full"><i class="material-icons">perm_identity</i></a>
+          <a class="icon last btn btn-full"><i class="material-icons">business</i></a>
+          <a class="label">LOGIN</a>
+        </div>
+        <div class="share">
+          <a class="icon first btn btn-ghost"><i class="material-icons">perm_identity</i></a>
+          <a class="icon last btn btn-ghost"><i class="material-icons">business</i></a>
+          <a class="label">SIGN UP</a>
+        </div>
       </div>
       <!-- End of title class -->
     </div>
+    <!-- All the modals go here -->
     <div id="modal--1">
-      <span onclick="document.getElementById('modal--1').style.display='none'">&times</span>
       <form>
+        <span onclick="document.getElementById('modal--1').style.display='none'">&times</span>
         <label>
-          <input type="text" required />
+          <input type="text"  />
           <div class="label-text">USERNAME</div>
         </label>
         <label>
-          <input type="text" required />
+          <input type="text"  />
           <div class="label-text">Password</div>
         </label>
         <button>Log In</button>
       </form>
     </div>
     <div id="modal--2">
-      <span onclick="document.getElementById('modal--2').style.display='none'">&times</span>
       <form>
+        <span onclick="document.getElementById('modal--2').style.display='none'">&times</span>
         <label>
-          <input type="text" required />
+          <input type="text"  />
           <div class="label-text">USERNAME</div>
         </label>
         <label>
-          <input type="text" required />
+          <input type="text"  />
           <div class="label-text">Password</div>
         </label>
         <label>
-          <input type="text" required />
+          <input type="text"  />
           <div class="label-text">Confirm Password</div>
         </label>
         <button>Sign Up</button>
