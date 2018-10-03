@@ -85,11 +85,6 @@ canvas {
   z-index: 4;
   top: 25%;
   left: 40%;
-  border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-radius: 5px;
 }
 #modal--1 {
   position: absolute;
@@ -99,17 +94,19 @@ canvas {
   z-index: 4;
   top: 33%;
   left: 40%;
-      border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-radius: 5px;
-
+}
+span {
+  margin-left: 90%;
+  font-size: 1.3vw;
+  cursor: pointer;
+  color: #ffffff;
 }
 form {
   text-align: center;
   background-color: rgba(38, 38, 38, 0.98);
   position: relative;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 label {
@@ -155,13 +152,6 @@ label input:focus + .label-text {
   -webkit-transform: translateY(-74px);
   transform: translateY(-74px);
 }
-label input:valid + .label-text {
-  font-size: 13px;
-  -moz-transform: translateY(-74px);
-  -ms-transform: translateY(-74px);
-  -webkit-transform: translateY(-74px);
-  transform: translateY(-74px);
-}
 
 button {
   background-color: rgba(38, 38, 38, 0.77);
@@ -191,22 +181,24 @@ button:hover, button:focus {
 }
 .follow:hover .label, .share:hover .label {
   opacity: 0;
-  transition: opacity .5s .125s ease-out;
+  transition: opacity .1s .1s ease-out;
 }
 .follow:hover .icon, .share:hover .icon {
   border-radius: 1em;
   margin: 0 0;
 }
-
+.material-icons {
+  padding-top: 2px;
+}
 .icon, .label {
-  background-color: #FC4F05;
-  line-height: 2rem;
+  background-color: #4E4643;
+  line-height: 2.3rem;
 }
 
 .label {
   border-radius: 1rem;
   position: absolute;
-  font-size: .618em;
+  font-size: .73vw;
   font-weight: 900;
   letter-spacing: .0816em;
   top: 0;
@@ -215,31 +207,31 @@ button:hover, button:focus {
   opacity: 1;
   pointer-events: none;
   text-transform: uppercase;
-  transition: opacity .5s .75s ease-out;
+  transition: opacity .2s .2s ease-out;
 }
 
 .icon {
   border-radius: 0;
   cursor: pointer;
   display: inline-block;
-  height: 2em;
+  height: 2.3em;
   margin: 0 -.5em;
-  transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
-  width: 2em;
+  transition: background-color .1s ease-out, border-radius .1s .1s ease-out, margin .1s .1s ease-out;
+  width: 5em;
 }
 .icon.first {
   border-bottom-left-radius: 1em;
   border-top-left-radius: 1em;
   margin-left: 0;
-  
+
 }
 .icon.last {
   border-bottom-right-radius: 1em;
   border-top-right-radius: 1em;
   margin-right: 0;
-   
+
 }
 .icon:hover {
-  background-color: #ebc247;
+  background-color: #e09d56;
   color: #111;
 }
