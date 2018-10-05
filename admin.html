@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="admin-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan:600,700" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title--main">
+      <!-- Beginning of title class -->
+      <div id="typed--string">
+        <h1>THE ALUMNI TERMINAL </h1>
+      </div>
+      <span id="typed"></span>
+      <div class="button--main">
+        <p>Log In as Administrator</p>
+      </div>
+    </div>
+    <!-- Modals Go Here -->
+    <div id="modal--1">
+      <form>
+        <span id="form-span" onclick="document.getElementById('modal--1').style.display='none'">&times</span>
+        <label>
+          <input type="text"  />
+          <div class="label-text">Password</div>
+        </label>
+        <button>Log In</button>
+      </form>
+    </div>
+    <!-- Particle JS -->
+    <div id="particles-js"></div>
+    <!-- Importing scripts -->
+    <script rel="text/javascript" src="particles.js"></script>
+    <script rel="text/javascript" src="app.js"></script>
+    <script rel="text/javascript" src="typed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script rel="text/javascript" src="admin-script.js"></script>
+  </body>
+</html>
