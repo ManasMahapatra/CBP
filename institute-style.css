@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Kodchasan', sans-serif;
+}
+body {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.89)), to(rgba(0,0,0,0.89))),url(alumni.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.btn {
+  left: 40%;
+  top: 40%;
+  position: absolute;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn.slide {
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.btn.slideback {
+  animation-name: slideBack;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.container--db,
+.container--alumni {
+  position: fixed;
+  color: #ffffff;
+  height: 100%;
+  width: 34%;
+  border-left: solid;
+  border-width: 1px;
+  border-color: #403f3f;
+  left: 100%;
+  transition: left 0.6s ease;
+  background-color: rgba(5, 5, 5, 0.76);
+}
+.container--db.open,
+.container--alumni.open {
+  left: 66%;
+}
+#close--db,
+#close {
+  margin-left: 90%;
+  font-size: 1.8vw;
+  cursor: pointer;
+  color: #ffffff;
+}
+.track--db,
+.track--alumni {
+  position: relative;
+  top: 31%;
+}
+.track--db p,
+.track--alumni p {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #4E4643;
+  border-color: #4E4643;
+  padding: 8px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-bottom: 2vw;
+  margin-left: 2.2vw;
+  margin-right: 2.2vw;
+  text-transform: uppercase;
+  transition: background-color .5s ease-out;
+  letter-spacing: 1px;
+}
+.track--db p.clicked,
+.track--alumni p.clicked {
+
+}
+.track--db p:hover,
+.track--alumni p:hover {
+  background-color: #e09d56
+}
+.button--main--2,
+.button--main--1 {
+  cursor: pointer;
+  border-radius: 100px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-color: #4E4643;
+  border-style: solid;
+  background-color: #4E4643;
+  transition: background-color .5s ease-out;
+  border-width: 1px;
+  font-size: 1vw;
+  letter-spacing: 1px;
+}
+.button--main--1:hover,
+.button--main--2:hover {
+  background-color: #e09d56
+}
+
+@keyframes slideLeft {
+  0% {left: 40%}
+  60% {left: 17%}
+  100% {left: 20%}
+
+}
+@keyframes slideBack {
+  0% {left: 20%}
+  60% {left: 43%}
+  100% {left: 40%}
+}
+@keyframes shakeBtn {
+
+}
